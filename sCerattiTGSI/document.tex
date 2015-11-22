@@ -1,0 +1,77 @@
+
+%%% Versao 1.0
+%%% Data: Novembro de 2015
+%%% Autor: Simone
+
+%%% Definicao da classe para a proposta e artigo no padrao SBC
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{graphicx,url}
+\usepackage{hyperref} 
+\usepackage{authblk}
+\usepackage{fancyhdr}
+\usepackage[latin1]{inputenc}
+\usepackage[brazil]{babel}   
+\usepackage[T1]{fontenc}  
+%\usepackage[utf8]{inputenc}
+\usepackage{datetime}  
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{hyperref}
+\usepackage{float}
+%\input{macros.tex} 
+\usepackage{graphicx}
+%\usepackage[affil-it]{authblk}
+
+%%%------------------SBC-ARTIGO--------------------------
+%%% Pacote com o padrao SBC
+\usepackage{sbc-template}
+%%%% Titulo, autores e identificacao no padrao SBC
+\input{secoes-artigo/identificacoa.tex} 
+%%%------------------SBC-ARTIGO--------------------------
+
+\begin{document}  
+
+%%% Para o artigo vc deve incluir o comando abaixo
+ \maketitle
+
+%%% vc devera comentar ou a proposta ou artigo
+
+%%%----------------------------------- BEGIN PROPOSTA
+%\input{secoes-proposta/capa.tex}
+%\input{secoes-proposta/dadosID.tex}
+%\input{secoes-proposta/objetivos.tex}
+%\input{secoes-proposta/motivacao.tex}
+%\input{secoes-proposta/referencialTeorico.tex}
+%\input{secoes-proposta/solucaoProposta.tex}
+%%% Caso vc nao tenha nenhum requisito especifico de Software ou hardware vc
+%%% pode excluir a linha abaixo
+%\input{secoes-proposta/requisitosSwHw.tex}
+%\input{secoes-proposta/cronograma.tex}
+%%%-----------------------------------%% END PROPOSTA 
+
+%%%-----------------------------------%% BEGIN ARTIGO
+ 
+  \input{secoes-artigo/abstract.tex}
+  \input{secoes-artigo/resumo.tex}
+  \input{secoes-artigo/introducao.tex}
+  \input{secoes-artigo/referencialTeorico}
+  \input{secoes-artigo/modeloPropost}
+  \input{secoes-artigo/roteiroDeImplantacao}
+  \input{secoes-artigo/citsmart}
+  \input{secoes-artigo/analise}
+  \input{secoes-artigo/trabalhosRelacionados}
+  \input{secoes-artigo/conclusoes.tex} 
+ 
+ %%%-----------------------------------%% END ARTIGO
+ 
+%%% Referencias bibliograficas no padrao da SBC
+\bibliographystyle{sbc}
+
+%%% Referencias bibliograficas no padrao da IEEE
+%\bibliographystyle{IEEEtran} 
+ 
+ %%% Nome do arquivo .bib contendo as suas referencias bibliograficas
+\bibliography{referencias}
+
+ 
+\end{document}
