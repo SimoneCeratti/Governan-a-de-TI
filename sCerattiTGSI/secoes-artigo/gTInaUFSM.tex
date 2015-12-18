@@ -1,7 +1,92 @@
-\section{Análise da Governança de TI aplicado no UFSM/ FW}
-\label{sec:analise}
+\section{Governança de TI na UFSM campus FW}
+\label{sec:gTInaUFSM}
 
-Nesta seção são apresentados os resultados obtidos por meio da aplicação de um
+Esta seção apresenta algumas ações de Governança de TI na UFSM campus de FW.
+
+ \subsection {Serviço de Help Desk}
+ 
+ % aqui a Figura desen
+ 
+A Figura~\ref{figura4} apresenta a interface do sistema Help Desk usado pelo 
+setor de TI da universidade UFSM campus de Frederico Westphalen, nesta interface 
+é solicitado os dados do usuário,  do local onde o problema está instaurado,
+além da descrição do problema 
+ %Figura~\ref{figura4} Interface Sistema Help Desk%Titulo da figura
+  
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{figuras/desen.jpg}
+\caption{Interface do Sistema Help Desk usado na UFSM campus FW}
+\label{figura4}  
+\end{figure}
+
+ 
+ A Figura~\ref{fi2} presenta um fluxo de atendimento onde cada chamada tem 
+ um início e um fim, o usuário realiza um chamado, o técnico avalia o chamado e
+ entra em contato com o usuário. Se o problema puder ser resolvido remotamente o
+ problema estará resolvido caso não seja possível o técnico realiza atendimento
+ local, resolve o problema, caso não consiga então é procurado alternativas possível sendo assim o problema 
+ se encerra.
+ 
+  %footnote{Figura etirada do endereÃ§o
+ %\url{www.getinews.com.br}}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{figuras/fluxoAtividade.jpg}
+\caption{Fluxo de atividade de atendimento realizados pela equipe de TI} 
+\label{fi2}  
+\end{figure}
+
+ \subsection{Gestão de Incidêntes }
+ 
+ No ITIL \cite{ITIL2} o Gerenciamento de Incidentes tem como foco principal reestabelecer serviço, minimizando o impacto negativo no negócio, uma solução de contorno ou reparo rápido fazendo com que o cliente volte a trabalhar. Garantir que os melhores níveis de disponibilidade e de qualidade dos serviços, mantendo os acordos de nível de serviço é também uma tarefa da gerência de incidentes.
+ % Aqui a figura Tabela1.pdf
+ 
+ A Figura~\ref{figura5} apresenta as  atividades do Sistema de Chamadas com as
+ atividades  realizadas pelo setor de TI da UFSM campus de FW. Os dados estão
+ organizados bimestralmente, descritos em números  
+ decimais e acompanhados do porcentual que cada atividade representa em um âmbito geral.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{figuras/tabela1.jpg}
+\caption{Atividades realizadas no periodo de um ano}
+\label{figura5}  
+\end{figure}
+
+Observa-se que o principal motivo para abertura de
+chamadas é relacionadas as impressoras, em seguida estão problemas
+relacionados à rede da universidade. Também é possível observar que existem
+serviços que nunca tiveram solicitação de chamados.Os meses de janeiro e fevereiro 
+correspondem aos meses de férias letivas na UFSM, dessa forma os alunos não estão presente 
+no campus, por consequência o fluxo de pessoas e a utilização dos equipamentos também 
+diminuem e assim as chamadas são menores, devido a menor utilização de equipamentos. 
+ 
+ %Figura~\ref{figura5} Sistema de Chamadas dos meses  %Titulo da figura 
+%  \input{tabela/sistChamada}  
+
+ A Tabela ~\ref{tabindicador1} apresenta os dados referentes a um período de um
+ ano apresentados bimestralmente, organizados em atividades resolvidas até o prazo, resolução do problema, 
+ satisfação dos usuários e atividades realizadas.
+ 
+\input{tabela/indicador}
+
+ 
+ 
+ Nas atividades realizadas até o prazo o percentual está sendo colocado desconsiderando 
+ que as atividades são armazenadas em um prazo de 48 horas corridos não considerando assim 
+ sábados e domingos, nem feriados dessa forma o percentual não é preciso. 
+
+É possível observar que a resolução dos problemas ocorridos é muito satisfatória. A satisfação 
+em relação aos atendimentos é total em todos os meses, e o percentual de pessoas que avaliam 
+os varios atendimentos. Também é possível observar que em meses que correspondem a 
+férias escolares o atendimento é reduzido.
+
+  %\input{tabela/indicador}  
+%\ldots
+\subsection{Análise da Governança de TI aplicado no UFSM/ FW}
+
+Os resultados obtidos por meio da aplicação de um
 instrumento, que teve como objetivo colher informações e opiniões da pessoas que 
 estão envolvidas no cotidiano da UFSM campus de FW,professores, tecnicos e
 alunos, visando identificar a visão dos entrevistados sobre a infraestrutura
@@ -180,3 +265,98 @@ indiferentes (10,2\%), 14 discordaram (23,7\%) e 2 discordam totalmente (3,4\%).
 A Figura ~\ref{figura14} mostra o resultado da questão  de
 satisfação com os recursos de TI disponíveis na UFSM campus de FW , para a
 comunidade acadêmica.
+
+
+\subsection{Roteiro de Implantação}
+
+
+ Planejamento é a palavra chave para as organizações, pois através dele há a possibilidade de 
+ abrangências competitivas, quando não existe planejamento estratégico não há conscientização 
+ da direção em relação ao plano estratégico de TI e sua necessidade para sustentar metas de 
+ negócio. O planejamento possibilita a aquisição de maturidade \cite{Cobit}.
+
+Para que seja possível acontecer a Governança de TI é necessária uma sensibilização de 
+todas as partes envolvida na organização, mas principalmente da direção, pois é através 
+dela que eventuais problemas poderão ser solucionados ou amenizados, \cite{f}.
+ 
+ Com base no modelo proposto por \cite{f} torna se possível desenvolver um
+ roteiro  à ser proposto para desenvolver na UFSM campus de Frederico
+ Westphalen onde foi selecionado cinco passos de implantação e.
+ 
+  \subsection{Mapeamento de Serviços usando ITIL} 
+ 
+   A ITIL~\cite{ITIL2} diz que o mapeamento de serviço é estabelecer como o
+serviço vai proceder, como vai ser controlado e desenhado. Para isso é necessário 
+uma esquematização, utilizando Portfólio de Serviços e Catalogo de Serviços.
+ 
+   A Figura ~\ref{figura1} representa um modelo de Governança de TI, com seus
+principais frameworks de governança, COBIT, ITIL e ISO/IEC38500. A figura
+ ~\ref{figura1} apresenta um esboço da  UFSM que
+além do campus principal em Santa Maria ainda possui 4 campus distribuídos no interior do 
+ estado, dessa forma a figura demonstra que o estudo está sendo realizado em um desses 
+ campus do interior do estado, mais especificadamente o campus de Frederico Westphalen, 
+ este estudo buscando identificar ferramentas já utilizadas, possíveis ferramentas que 
+ poderão ser suportadas pela mesma.
+  
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{figuras/ModeloGTI.jpg}
+\caption{Demonstrativo de estudo de Governança de TI em relação a UFSM
+ campus de Frederico Westphalen }
+\label{figura1}  
+\end{figure} 
+ 
+ A Figura~\ref{f19} apresentado um possível plano de implantação de
+Governança de TI no Campus de Frederico Westphalen delimitando acões que
+direcionariam a implantação da mesma, dessa forma seriam oito passo que
+trilhariam as ações até chegar a aprovação do programa, em en sequencia a
+elaboração de planos de gerencia de mudanças e aprimoramento da implantação,
+implantando os projetos, monitorando os mesmos, avaliando para dessa forma
+comunicar os resultados.
+ %\begin{itemize}
+\begin{figure}[H] 
+\centering
+\includegraphics[scale=0.6]{figuras/rotImpl.png}
+\caption{Projeto de Roteiro de Implantação no Campus de FW }
+\label{f19}  
+\end{figure}
+
+\begin{itemize}
+\item Sensibilizar a direção: ter o apoio da direção para dessa forma conseguir
+angariar recursos para desenvolve as atividades necessárias na implantação de
+Governança de TI. Para fundamentar essa ação pode ser usado de
+vários instrumentos entre eles palestras, visitas a outras organizações que já fazem
+uso de Governança de TI, mostrando possíveis resultados que a mesma pode gerar;
+\item Definir papéis e definir responsabilidades: definir quem realizara cada. 
+	atividade e a responsabilidade que terá em relação a tal atividade para dessa 
+	forma atingir ao objetivo final, (alta administração, área de auditoria,
+compliance e riscos, desenvolvimento, suporte, infraestrutura tecnológica, segurança
+da informação);
+\item Estabelecer metas e indicador final: Traçaras ações, determinar oque se quer
+ter ao final dessas ações e de que forma se pretende chegar ao final dessas ações; 
+
+\item Estabelecer um roadmap de implantação: estabelecendo ações de curto médio
+e longo prazo, identificando as ações de maior prioridade. Identificar o que
+precisa ser feito, definir a sequencia das atividades a ser implantadas, 
+identificando os benefícios que poderão ser alcançados;
+\item Elaborar o plano do programa: definir quais projetos faram parte do
+programa, definir escopo. Após ter o roadmap delimitar
+quais projetos que faram parte do programa, delimitando escopo, estrutura
+e ações de TI, sequencia de implantação dos processos, em um linha de tempo pré
+estabelecida.
+\item Aprovar o programa: Após ter o plano pronto realizar a aprovação do mesmo
+para dar início a implantação de Governança de TI; 
+\item Implantar as ações de mudança: por em prática oque foi planejado;
+\item Executar os projetos de implantação de Governança de TI: Executar oque
+anteriormente foi planejado de forma organizada; 
+\item Monitorar a implantação: Realizar o monitoramento para prever necessidades
+d mudanças ou realizar alterações no plano;
+\item Avaliar os resultados: Avaliar para definir os próximos passos;
+\item Comunicar os resultados alcançados: Tomar decisões em conjunto é a melhor
+ forma de se ter sucesso; 
+ \item	Revisar e evoluir o programa: Adaptar o plano para dessa forma ter
+ sucesso nos passos futuros.
+\end{itemize}
+%\end{referencialTeorico}
+
+ 
